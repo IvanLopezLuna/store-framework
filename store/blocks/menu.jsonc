@@ -35,7 +35,7 @@
 
     "vtex.menu@2.x:menu#major": {
         "children": [
-            "menu-item#refrigerator",
+            "menu-item#refrigerators",
             "menu-item#ovens",
             "menu-item#washers"
         ],
@@ -44,49 +44,6 @@
             "orientation": "vertical"
         }
     },
-    "menu-item#refrigerator": {
-        "props": {
-            "id": "menu-item-refrigerator",
-            "type": "custom",
-            "highlight": false,
-            "itemProps": {
-                "type": "internal",
-                "href": "#",
-                "noFollow": false,
-                "tagTitle": "refrigerator",
-                "text": "refrigerator"
-            }
-        }        
-    },
-    "menu-item#ovens": {
-        "props": {
-            "id": "menu-ovens-shop",
-            "type": "custom",
-            "highlight": false,
-            "itemProps": {
-                "type": "internal",
-                "href": "#",
-                "noFollow": false,
-                "tagTitle": "ovens",
-                "text": "ovens"
-            }
-        }        
-    },
-    "menu-item#washers": {
-        "props": {
-            "id": "menu-washers-shop",
-            "type": "custom",
-            "highlight": false,
-            "itemProps": {
-                "type": "internal",
-                "href": "#",
-                "noFollow": false,
-                "tagTitle": "washers",
-                "text": "washers"
-            }
-        }        
-    },
-
     "vtex.menu@2.x:submenu#small-appliances":{
         "children":[
             "vtex.menu@2.x:menu#small"
