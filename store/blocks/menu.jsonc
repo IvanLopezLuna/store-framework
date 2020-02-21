@@ -1,0 +1,95 @@
+{
+    "vtex.menu@2.x:menu#categories": {
+        "children": [
+            "menu-item#major-appliances",
+            "menu-item#small-appliances",
+            "menu-item#electronics"
+        ],
+        
+        "props":{
+            "orientation": "horizontal"
+        }
+    },
+    "menu-item#major-appliances": {
+        "props": {
+            "id": "menu-item-major-appliances",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "Major Appliances",
+                "text": "Major Appliances"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#major"
+        ]
+    },
+    "vtex.menu@2.x:submenu#major":{
+        "children":[
+            "vtex.menu@2.x:menu#major"
+        ]
+    },
+
+    "vtex.menu@2.x:menu#major": {
+        "children": [
+            "menu-item#refrigerator",
+            "menu-item#ovens",
+            "menu-item#washers"
+        ],
+        
+        "props":{
+            "orientation": "vertical"
+        }
+    },
+    "menu-item#refrigerator": {
+        "props": {
+            "id": "menu-item-refrigerator",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "refrigerator",
+                "text": "refrigerator"
+            }
+        }        
+    },
+    "menu-item#ovens": {
+        "props": {
+            "id": "menu-ovens-shop",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "ovens",
+                "text": "ovens"
+            }
+        }        
+    },
+    "menu-item#washers": {
+        "props": {
+            "id": "menu-washers-shop",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "washers",
+                "text": "washers"
+            }
+        }        
+    },
+
+    "vtex.menu@2.x:submenu#small-appliances":{
+        "children":[
+            "vtex.menu@2.x:menu#small"
+        ]
+    }
+}
