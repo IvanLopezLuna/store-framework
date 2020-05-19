@@ -11,22 +11,6 @@
         }
     },
     // 
-    "menu-item#major-appliances": {
-        "props": {
-            "id": "menu-item-major-appliances",
-            "type": "custom",
-            "highlight": false,
-            "itemProps": {
-                "type": "internal",
-                "href": "#",
-                "noFollow": false,
-                "tagTitle": "Major Appliances",
-                "text": "Major Appliances"
-            }
-        },
-        "blocks": ["vtex.menu@2.x:submenu#major"]
-    },
-    // 
     "vtex.menu@2.x:submenu#major":{
         "children":[
             "vtex.menu@2.x:menu#major"
@@ -37,11 +21,6 @@
             "vtex.menu@2.x:menu#small"
         ]
     },
-    "vtex.menu@2.x:submenu#electronics":{
-        "children":[
-            "vtex.menu@2.x:menu#electronics"
-        ]
-    },
     // 
     "vtex.menu@2.x:menu#major": {
         "children": [
@@ -49,7 +28,6 @@
             "menu-item#ovens",
             "menu-item#washers"
         ],
-        
         "props":{
             "orientation": "vertical"
         }
@@ -60,10 +38,14 @@
             "menu-item#toasters",
             "menu-item#coffee"
         ],
-        
         "props":{
             "orientation": "vertical"
         }
+    },
+    "vtex.menu@2.x:submenu#electronics":{
+        "children":[
+            "vtex.menu@2.x:menu#electronics"
+        ]
     },
     "vtex.menu@2.x:menu#electronics": {
         "children": [
@@ -71,7 +53,6 @@
             "menu-item#laptops",
             "menu-item#tvs"
         ],
-        
         "props":{
             "orientation": "vertical"
         }
